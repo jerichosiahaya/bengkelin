@@ -1,0 +1,29 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 3em;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+}
+
+
+.mod {
+  width: 25%;
+}
+
+.p-mod {
+  margin: 1em;
+}
+
+.p-mod a {
+  text-decoration: none;
+  color: #2a2a2a;
+}
