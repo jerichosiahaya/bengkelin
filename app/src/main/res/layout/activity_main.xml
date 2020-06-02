@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingTop="80dp"
+    android:paddingRight="30dp"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/bengkelinlogoapp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        >
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutemail"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_below="@id/layoutpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutpassword"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_rounded"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/btnLogin"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_rounded"
+        android:text="REGISTER"
+        android:textColor="#FFFFFF"
+
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+
+
+
+

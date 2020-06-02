@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KendaraanDetail">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Detail Kendaraan"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="ID: "
+                android:layout_marginLeft="290dp"
+
+                />
+
+            <TextView
+                android:id="@+id/txtid"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:gravity="right"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Jenis Kendaraan :"
+            android:layout_marginLeft="30dp"
+
+            />
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <EditText
+                android:id="@+id/txtjenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Tipe Kendaraan :"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <EditText
+                android:id="@+id/txttipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Tahun Keluaran :"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <EditText
+                android:id="@+id/txttahun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_rounded"
+            android:text="UPDATE KENDARAAN INI"
+            android:textColor="#FFFFFF"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnUpdate"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_rounded"
+            android:text="DELETE KENDARAAN INI "
+            android:textColor="#FFFFFF"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnDelete"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_rounded"
+            android:text="KEMBALI KE DAFTAR KENDARAAN"
+            android:textColor="#FFFFFF"
+
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

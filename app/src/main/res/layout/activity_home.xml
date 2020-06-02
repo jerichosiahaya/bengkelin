@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bengkelinlogoapp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:text="Selamat Datang,"
+                        android:textColor="#EF504D"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/nama"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:textColor="#EF504D"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:id="@+id/grid"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:layout_height="400dp"
+                android:layout_weight="8"
+                android:background="#FFFFFF"
+                android:padding="5dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/dataKendaraan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#EF504D"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical" />
+
+                    <ImageView
+                        android:id="@+id/gambardata"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/data" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gambardata"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="65dp"
+                        android:text="DAFTAR KENDARAAN"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/tambahKendaraan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#EF504D"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical" />
+
+                    <ImageView
+                        android:id="@+id/gambartambah"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-10dp"
+                        android:src="@drawable/plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="65dp"
+                        android:text="TAMBAH KENDARAAN"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/servisKendaraan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#EF504D"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical" />
+
+                    <ImageView
+                        android:id="@+id/gambarservis"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/service" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="65dp"
+                        android:text="SERVIS KENDARAAN"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/UploadPembayaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#EF504D"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center"
+                        android:orientation="vertical" />
+
+                    <ImageView
+                        android:id="@+id/gambarbayar"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/folder" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="65dp"
+                        android:text="PEMBAYARAN"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </GridLayout>
+
+            <Button
+                android:id="@+id/btnLogout"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grid"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_rounded"
+                android:text="LOGOUT"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

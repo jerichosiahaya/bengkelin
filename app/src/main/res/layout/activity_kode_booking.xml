@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KodeBooking">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kode Booking Service"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/txtKode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" kode booking "
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btnCek"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#EF504D"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="50dp"
+            android:text="Cek BOOKING Saya >" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

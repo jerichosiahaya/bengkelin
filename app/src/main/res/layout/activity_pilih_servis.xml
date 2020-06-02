@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtpilihservis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Pilih Servis"
+            android:textColor="#EF504D"
+            android:textSize="25sp" />
+
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_height="600dp"
+        android:layout_weight="8"
+        android:background="#FFFFFF"
+        android:padding="5dp"
+        android:layout_marginTop="2dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/servis_berkala"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/gambarservisberkala"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/berkala" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gambardata"
+                android:layout_gravity="center"
+                android:layout_marginTop="65dp"
+                android:text="SERVIS BERKALA"
+                android:textColor="#EF504D"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/servis_mesin"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/gambarservismesin"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/mesin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gambardata"
+                android:layout_gravity="center"
+                android:layout_marginTop="65dp"
+                android:text="SERVIS MESIN"
+                android:textColor="#EF504D"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/servis_bodi"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/gambarservisbody"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/mobil" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gambardata"
+                android:layout_gravity="center"
+                android:layout_marginTop="65dp"
+                android:text="SERVIS BODY"
+                android:textColor="#EF504D"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/spooring_balancing"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/gambarservisspooringbalancing"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/spooring" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:lines="3"
+                android:layout_below="@+id/gambardata"
+                android:layout_gravity="center"
+                android:layout_marginTop="65dp"
+                android:text="SPOORING\n AND\nBALANCING"
+                android:textColor="#EF504D"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </GridLayout>
+
+
+        <Button
+            android:id="@+id/btnBackHome"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLogin"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_rounded"
+            android:text="BERANDA"
+            android:textColor="#FFFFFF"
+
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
